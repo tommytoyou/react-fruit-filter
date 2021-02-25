@@ -6,15 +6,14 @@ class Input extends Component {
         this.state = {};
     }
 
-    render () {
-        return (
+    render() {
+        return(
             <div>
-            <label htmlFor="Fruit-filter">Filter these fruits</label>
-            <input type="text" value={this.props.value} onChange={this.props.onChange} name="fruit-filter"/>
-
-
+                <label htmlFor="fruit-filter">Filter These Fruits</label>
+                <input type="text" value={this.props.value} onChange={this.props.handleFilter} name="fruit-filter"/>
             </div>
         )
     }
 }
+
 export default Input;
